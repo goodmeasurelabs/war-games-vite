@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 # .env file
 .env
+
+# Local deployment cache.
+.wrangler/
