@@ -26,6 +26,7 @@ jobs:
           node-version: '22'
       - run: npm ci
       - run: npm run build
+      - run: node scripts/verify-production-artifact.mjs
   deploy:
     needs: validate
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
@@ -41,6 +42,7 @@ jobs:
           node-version: '22'
       - run: npm ci
       - run: npm run build
+      - run: node scripts/verify-production-artifact.mjs
       - name: Require the current main revision
         env:
           GH_TOKEN: ${{ github.token }}
