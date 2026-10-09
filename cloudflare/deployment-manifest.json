@@ -2,20 +2,22 @@
   "sourceCommit": "475d5b6d1159949b2725509d78cc620616c65dd9",
   "deploymentId": "5aecb97f-27ce-41e2-bb55-2a891e227f86",
   "project": "gm-baberuth",
-  "artifactPolicy": "Original published Netlify assets retained byte-for-byte; public/_worker.js adds host-specific redirects and preview search exclusion. This deployed artifact is not the output of a new rebuild.",
+  "artifactPolicy": "Reviewed metadata-only update: index.html head and social/card-v1.png changed; all original runtime assets and body preserved byte-for-byte.",
   "files": {
     "_redirects": "bd00766d6edbe8742fc1546343749db9adf898e447b0a109350182e41b9c4534",
+    "index.html": "f844b2febc382186a74cd14e34b4167b74a1011d1cb9eb175995088af5af6dc2",
+    "vite.svg": "4a748afd443918bb16591c834c401dae33e87861ab5dbad0811c3a3b4a9214fb",
+    "wargames-favico.ico": "2a6eb36afc757861e622efbfb33527bf0e39b6c9bed3db7a245b53bc56129216",
     "_worker.js": "7a538d458375e0fae002569670612e15fdcd5417064372ef790f8f6278c5c7ac",
+    "assets/war-games-bg-3-BGBXsZS9.webp": "e6de3752baba55336cb5003cdc6c13f9bdc6c6f7061f34829388422cf43f8b5c",
     "assets/index-B-aneQZR.js": "a56eb48c195f6a8b7d867e73cea7719f569ccce740c4e0116b46447a1476266c",
+    "assets/wargames-logo-CaKZbh_6.webp": "448b8de0737a4d9f279979f755afd5408f26beba009baf31218e7ad27bc12e05",
+    "assets/war-games-back-B3gWzNrA.jpeg": "aa08d0bad28638be0a46fdb8ac2f8d25314f71fe357329f087acf9958628ea46",
+    "assets/war-games-score-icon-KUn43tQb.png": "27a7306542331964389ae63284085fc5cf9bfe38466ca60678cc46385336a6af",
     "assets/index-CG1ucuSC.css": "b97c49c7e39975652847484fd62ffc8cb0be18636a14253ef31fd168a25fd412",
     "assets/sean-tarzy-logo-BU8n-nS9.webp": "5b8c6657a3fd4ff47dc2d0a45aa61d1f95b8967bf1e0b7414d397a3052a2cc13",
-    "assets/war-games-back-B3gWzNrA.jpeg": "aa08d0bad28638be0a46fdb8ac2f8d25314f71fe357329f087acf9958628ea46",
     "assets/war-games-baseball-card-back-Dc9BjUHU.png": "d403fd84cc9f5dbe218d8654d31a2574d1186806401037643fa2fc121ddb76c2",
-    "assets/war-games-bg-3-BGBXsZS9.webp": "e6de3752baba55336cb5003cdc6c13f9bdc6c6f7061f34829388422cf43f8b5c",
-    "assets/war-games-score-icon-KUn43tQb.png": "27a7306542331964389ae63284085fc5cf9bfe38466ca60678cc46385336a6af",
-    "assets/wargames-logo-CaKZbh_6.webp": "448b8de0737a4d9f279979f755afd5408f26beba009baf31218e7ad27bc12e05",
-    "index.html": "248f058a7712dc966cbb97afc51a270f5f617f94b5a90142b848d95a02327778",
-    "vite.svg": "4a748afd443918bb16591c834c401dae33e87861ab5dbad0811c3a3b4a9214fb",
-    "wargames-favico.ico": "2a6eb36afc757861e622efbfb33527bf0e39b6c9bed3db7a245b53bc56129216"
-  }
+    "social/card-v1.png": "7b8e715f79d30b2aefec11bc6e3ee9405a9f7223d4eb64c8b4d422a1aef72e1a"
+  },
+  "metadataBaselineCommit": "8d2cb9b01cad8bf4f10ddbe0f315e9243e30d18a"
 }

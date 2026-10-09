@@ -1,0 +1,12 @@
+import {readFile,writeFile} from 'node:fs/promises';import {createHash} from 'node:crypto';
+import {seoHead,validateSocialImage} from '../vendor/gml-seo.mjs';
+const pin=JSON.parse(await readFile('vendor/platform-source.json','utf8'));
+if(createHash('sha256').update(await readFile('vendor/gml-seo.mjs')).digest('hex')!==pin.sha256)throw Error('Shared helper digest mismatch');
+const seo=JSON.parse(await readFile('site.seo.json','utf8'));
+const original=await readFile('dist/index.html','utf8');
+if((original.match(/<title>/g)||[]).length!==1)throw Error('Expected one original title');
+const html=original.replace(/<title>[^<]*<\/title>/,seoHead(seo));
+if(html.split('<body>')[1]!==original.split('<body>')[1])throw Error('Body changed');
+for(const key of ['description','og:image','twitter:image','twitter:card'])if((html.match(new RegExp(`(?:name|property)="${key}"`,'g'))||[]).length!==1)throw Error('Missing/duplicate metadata');
+validateSocialImage(await readFile('dist/social/card-v1.png'),seo.image);await writeFile('dist/index.html',html);
+console.log('Validated static share metadata/image; original body and runtime assets preserved');
